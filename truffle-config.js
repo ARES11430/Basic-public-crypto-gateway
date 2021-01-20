@@ -2,7 +2,7 @@ require('babel-register');
 require('babel-polyfill');
 
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "cat trade perfect fabric crack young lumber secret mouse detail minor want";
+var mnemonic = "";
 
 module.exports = {
   networks: {
@@ -14,7 +14,7 @@ module.exports = {
    rinkeby: {
       provider: function() { 
        return new HDWalletProvider(mnemonic,
-         "https://rinkeby.infura.io/v3/ae4099aa2c074c129d33b27329bbd980");
+         "");
       },
       network_id: 4,
       gasPrice: 20000000000,
